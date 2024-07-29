@@ -1,0 +1,46 @@
+.FindFriend {
+    height: 100vh;
+
+    >div {
+        border: 1px solid lightgray;
+        width: 30rem;
+        height: auto;
+        border-radius: 1rem;
+
+        >h1 {
+            margin-bottom: 1rem;
+        }
+
+        >div {
+            >input {
+                width: 90%;
+                height: 2.5rem;
+                border: 0.5px solid lightgray;
+                padding: 0.5rem;
+                border-radius: 1.5rem;
+            }
+
+            button {}
+
+            >div {
+                border: 0.5px solid lightsteelblue;
+                margin-top: 0.4rem;
+                border-radius: 0.7rem;
+                padding: 0.3rem;
+
+                &:hover {
+                    background-color: gainsboro;
+                }
+
+                >p {
+                    padding: 0.5rem;
+                    border: 0.5px solid lightgray;
+                    border-radius: 1.5rem;
+                    margin-top: 0.4rem;
+                    width: 90%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

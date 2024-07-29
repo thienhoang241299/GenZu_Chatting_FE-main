@@ -1,0 +1,163 @@
+.EditAndSetting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  > div {
+    width: 70%;
+    border: 1px solid lightgrey;
+    border-radius: 1.2rem;
+    padding: 1rem;
+    background-color: #e1f1ff;
+
+    > div {
+      width: 45%;
+    }
+
+    .EditInfor {
+      padding: 0.5rem;
+      border-radius: 1rem;
+
+      > img {
+        height: 7rem;
+        width: 7rem;
+        margin: auto;
+        border-radius: 50%;
+      }
+
+      h1 {
+        font-size: 1.3rem;
+        text-align: center;
+        margin: 0.3rem;
+      }
+
+      > div {
+        > h3 {
+          margin-top: 0.5rem;
+          margin-bottom: 0.1rem;
+        }
+
+        > div {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          > div {
+            width: 90%;
+
+            > input {
+              border: 0.5px solid rgb(189, 189, 189);
+              border-radius: 0.5rem;
+              padding: 0.3rem 0.4rem;
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      .buttonSave {
+        margin-top: 1rem;
+        color: white;
+
+        > button {
+          background-color: rgb(84, 84, 255);
+          padding: 0.3rem;
+          width: 30%;
+          border-radius: 0.5rem;
+          margin: auto;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  // Responsive adjustments
+  @media (max-width: 768px) {
+    > div {
+      width: 90%;
+
+      > div {
+        width: 100%;
+      }
+    }
+
+    .EditInfor {
+      > img {
+        height: 5rem;
+        width: 5rem;
+      }
+
+      h1 {
+        font-size: 1rem;
+      }
+
+      > div {
+        > h3 {
+          font-size: 0.9rem;
+        }
+
+        > div {
+          flex-direction: column;
+
+          > div {
+            width: 100%;
+
+            > input {
+              padding: 0.2rem 0.3rem;
+            }
+          }
+        }
+      }
+
+      .buttonSave {
+        > button {
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    > div {
+      width: 100%;
+
+      > div {
+        width: 100%;
+      }
+    }
+
+    .EditInfor {
+      > img {
+        height: 4rem;
+        width: 4rem;
+      }
+
+      h1 {
+        font-size: 0.9rem;
+      }
+
+      > div {
+        > h3 {
+          font-size: 0.8rem;
+        }
+
+        > div {
+          > div {
+            width: 100%;
+
+            > input {
+              padding: 0.1rem 0.2rem;
+            }
+          }
+        }
+      }
+
+      .buttonSave {
+        > button {
+          width: 60%;
+        }
+      }
+    }
+  }
+}
